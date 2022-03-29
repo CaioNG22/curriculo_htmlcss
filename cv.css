@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: roboto;
+  color: #797777;
 }
 
 html {
@@ -45,13 +46,13 @@ nav {
   flex-direction: row;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-li {
+nav li {
   padding: 0 10px;
   list-style: none;
 }
@@ -95,14 +96,90 @@ p {
   text-align: left;
 }
 
-.minisection{
+.minisection {
   width: 90%;
   height: auto;
   border: 1px solid #004880;
-  margin: 20PX auto;
+  margin: 20px auto;
   border-radius: 10px;
 }
 
-progress{
+progress {
   width: 100%;
+}
+
+.iconperfil {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 1px 1px 5px #3a3d3f, -1px -1px 1px #dddada;
+}
+
+.section_content .minisection ul {
+  margin-left: 20px;
+}
+
+.fotoperfil{
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background-color: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  margin: auto auto  auto auto;
+  left: 0;
+  right: 0; 
+  box-shadow: 1px 1px 10px #3a3d3f, -1px -1px 50px #dddada;
+}
+
+.foto{
+  height: 125px;  
+  margin: 10px;
+  
+}
+
+.sobres .section_content{
+  text-align: center;
+}
+
+
+
+@media all and (min-width: 768px) {
+  header {
+    width: 40%;
+    height: 40px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: #f5f3f3;
+    box-shadow: 5px 5px 12px #8d8d8d, -5px -5px 12px #ffffff;
+    position: sticky;
+    top: 10px;
+  }
+
+  section {
+    width: 40%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 12px #004880, -5px -5px 12px #ffffff;
+  }
+
+  .up_btn {
+    background-color: #004880;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    bottom: 10vh;
+    right: 40px;
+    position: fixed;
+    
+    justify-content: center;
+    align-items: center;
+  }
 }
